@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,11 +25,25 @@ public class CharacterMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("speed", Mathf.Abs(myRigidbody.velocity.x));
+        animator.SetFloat("speed", Mathf.Abs(myRigidbody.velocity.x)); //every frame, sets the speed parameter of the animator to the absolute value of x velocity of character
+        
+        //flip animator code
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.transform.localScale = new Vector3(-1, 1, 1); //if player is pressing left, flip character sprite to face left
+        }
+
+        if(Input.GetAxis("Horizontal") > 0)
+        {
+            animator.transform.localScale = new Vector3(1, 1, 1); //if player is pressing right, flip character sprite to face right
+        }
+
+        //input code 
         if (Mathf.Abs(myRigidbody.velocity.magnitude) < maxSpeed && Mathf.Abs(Input.GetAxis("Horizontal")) >= 0)
         {
             myRigidbody.AddForce(new Vector2(acceleration * Input.GetAxis("Horizontal"),0), ForceMode2D.Force);
         }
+
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
