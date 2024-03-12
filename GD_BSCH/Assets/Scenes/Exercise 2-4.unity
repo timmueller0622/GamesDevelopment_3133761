@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -766,7 +766,7 @@ Transform:
   m_GameObject: {fileID: 1207782457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0000002, y: 13.64, z: -19}
+  m_LocalPosition: {x: -2.0000005, y: 13.64, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1355,7 +1355,7 @@ Transform:
   m_GameObject: {fileID: 1938896730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0000002, y: 13.64, z: -19}
+  m_LocalPosition: {x: -2.0000005, y: 13.64, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2092,11 +2092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3345611587560226183, guid: 34e847032e9e81c429a723bd7573677f, type: 3}
       propertyPath: jumpForce
-      value: 12
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3345611587560226183, guid: 34e847032e9e81c429a723bd7573677f, type: 3}
       propertyPath: secondaryJumpForce
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4302841025455535516, guid: 34e847032e9e81c429a723bd7573677f, type: 3}
       propertyPath: m_LocalPosition.x

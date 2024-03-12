@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1351183129, guid: 35846ff74f7541249af8f81b6fc9f6dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682688d7861558847aab7bf092cbbba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 0
+  scoreValue: 5
   gameManager: {fileID: 0}
   pickupEffect: {fileID: 6805788571733608672, guid: 7c44fc0c8ca1a1049af52d41810d260e, type: 3}
 --- !u!58 &2757205593452425610
