@@ -22,6 +22,7 @@ public class CheckpointScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             gameManager.UpdateSpawnPoint(this.transform);
+            GetComponent<Animator>().SetTrigger("CheckPointIsTriggered");
         }
     }
 }
