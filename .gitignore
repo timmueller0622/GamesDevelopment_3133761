@@ -47,7 +47,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 
-#Unity3D generated large files
+# Unity3D generated large files
 *.dylib
 
 # Unity3D generated meta files
