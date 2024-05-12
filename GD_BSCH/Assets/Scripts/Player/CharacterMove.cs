@@ -48,12 +48,8 @@ public class CharacterMove : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             myRigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            StartCoroutine(SecondaryJump());
+            StartCoroutine("SecondaryJump");
             
-        }
-        if (secondaryJump && Input.GetButton("Jump") && !isGrounded)
-        {
-            myRigidbody.AddForce(new Vector2(0, secondaryJumpForce), ForceMode2D.Force);
         }
     }
 
@@ -69,9 +65,11 @@ public class CharacterMove : MonoBehaviour
 
     IEnumerator SecondaryJump()
     {
-        secondaryJump = true;
+        
         yield return new WaitForSeconds(secondaryJumpDelay);
-        secondaryJump = false;
-        yield return null;
+        if (Input.GetButton("Jump"))
+        {
+            myRigidbody.AddForce(new Vector2(0, secondaryJumpForce), ForceMode2D.Impulse);
+        }
     }
 }
